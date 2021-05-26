@@ -27,18 +27,21 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/tv_reuslt">
 
-        <ImageView
+        <TextView
+            android:text="..."
             android:onClick="more"
             android:id="@+id/iv_more"
             style="@style/style2" />
 
-        <ImageView
+        <TextView
+            android:text="^"
             android:id="@+id/iv_capital"
             style="@style/style2" />
 
-        <ImageView style="@style/style2" />
+        <TextView style="@style/style2" />
 
-        <ImageView
+        <TextView
+            android:text="Delete"
             android:id="@+id/iv_delete"
             style="@style/style2" />
     </LinearLayout>
