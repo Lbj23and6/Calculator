@@ -28,10 +28,9 @@ public class MoreOperationDialog extends Dialog implements View.OnClickListener 
 
     public selectListener selectlistener;
 
-    public MoreOperationDialog(@NonNull Context context, selectListener selectlistener) {
+    public MoreOperationDialog(@NonNull Context context) {
         super(context);
         this.context = context;
-        this.selectlistener = selectlistener;
         this.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
     }
 

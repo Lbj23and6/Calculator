@@ -3,38 +3,42 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DFDADA"
     android:orientation="vertical">
     <TextView
         android:id="@+id/tv_pai"
         style="@style/style4"
+        android:text="π"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_e"
         style="@style/style4"
+        android:text="e"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_pai"/>
 
     <TextView
         android:id="@+id/tv_fai"
         style="@style/style4"
+        android:text="φ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_e"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
     <TextView
         android:id="@+id/tv_log"
         style="@style/style4"
+        android:text="log"
         app:layout_constraintTop_toBottomOf="@id/tv_pai"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_ln"
         style="@style/style4"
+        android:text="ln"
         app:layout_constraintTop_toBottomOf="@id/tv_e"
         app:layout_constraintStart_toEndOf="@id/tv_pai"/>
 
@@ -43,4 +47,119 @@
         style="@style/style4"
         app:layout_constraintTop_toBottomOf="@id/tv_fai"
         app:layout_constraintStart_toEndOf="@id/tv_ln"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_sqrt"
+        style="@style/style4"
+        android:text="√"
+        app:layout_constraintTop_toBottomOf="@id/tv_log"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_abs"
+        style="@style/style4"
+        android:text="abs"
+        app:layout_constraintTop_toBottomOf="@id/tv_ln"
+        app:layout_constraintStart_toEndOf="@id/tv_log"/>
+
+    <TextView
+        android:id="@id/tv_blank2"
+        style="@style/style4"
+        app:layout_constraintStart_toEndOf="@id/tv_abs"
+        app:layout_constraintTop_toBottomOf="@+id/tv_blank1" />
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_sin"
+        style="@style/style4"
+        android:text="sin"
+        app:layout_constraintTop_toBottomOf="@id/tv_sqrt"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_cos"
+        style="@style/style4"
+        android:text="cos"
+        app:layout_constraintTop_toBottomOf="@id/tv_abs"
+        app:layout_constraintStart_toEndOf="@id/tv_sin"/>
+
+    <TextView
+        android:id="@id/tv_tan"
+        style="@style/style4"
+        android:text="tan"
+        app:layout_constraintStart_toEndOf="@id/tv_cos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_blank2" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_asin"
+        style="@style/style4"
+        android:text="asin"
+        app:layout_constraintTop_toBottomOf="@id/tv_sin"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_acos"
+        style="@style/style4"
+        android:text="acos"
+        app:layout_constraintTop_toBottomOf="@id/tv_cos"
+        app:layout_constraintStart_toEndOf="@id/tv_sin"/>
+
+    <TextView
+        android:id="@id/tv_atan"
+        style="@style/style4"
+        android:text="atan"
+        app:layout_constraintStart_toEndOf="@id/tv_cos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tan" />
+
+
+
+    <TextView
+        android:id="@+id/tv_sinh"
+        style="@style/style4"
+        android:text="sinh"
+        app:layout_constraintTop_toBottomOf="@id/tv_asin"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_cosh"
+        style="@style/style4"
+        android:text="cosh"
+        app:layout_constraintTop_toBottomOf="@id/tv_acos"
+        app:layout_constraintStart_toEndOf="@id/tv_sinh"/>
+
+    <TextView
+        android:id="@id/tv_tanh"
+        style="@style/style4"
+        android:text="tanh"
+        app:layout_constraintStart_toEndOf="@id/tv_cosh"
+        app:layout_constraintTop_toBottomOf="@+id/tv_atan" />
+
+
+
+    <TextView
+        android:id="@+id/tv_asinh"
+        style="@style/style4"
+        android:text="asinh"
+        app:layout_constraintTop_toBottomOf="@id/tv_sinh"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_acosh"
+        style="@style/style4"
+        android:text="acosh"
+        app:layout_constraintTop_toBottomOf="@id/tv_cosh"
+        app:layout_constraintStart_toEndOf="@id/tv_sinh"/>
+
+    <TextView
+        android:id="@+id/atanh"
+        style="@style/style4"
+        android:text="atanh"
+        app:layout_constraintStart_toEndOf="@id/tv_cosh"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tanh" />
 </androidx.constraintlayout.widget.ConstraintLayout>

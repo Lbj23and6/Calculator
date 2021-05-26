@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.calculator.chenzhaoxuan.MoreOperationDialog;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void more(View view) {
+        new MoreOperationDialog(this).show();
     }
 }
