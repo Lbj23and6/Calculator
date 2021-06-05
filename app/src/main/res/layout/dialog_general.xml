@@ -11,12 +11,14 @@
         android:id="@+id/tv_pai"
         style="@style/style4"
         android:text="π"
+        android:tag="π"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_e"
         style="@style/style4"
         android:text="e"
+        android:tag="e"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_pai"/>
 
@@ -24,6 +26,7 @@
         android:id="@+id/tv_fai"
         style="@style/style4"
         android:text="φ"
+        android:tag="φ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_e"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,12 +36,14 @@
         android:id="@+id/tv_log"
         style="@style/style4"
         android:text="log"
+        android:tag="log"
         app:layout_constraintTop_toBottomOf="@id/tv_pai"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_ln"
         style="@style/style4"
         android:text="ln"
+        android:tag="ln"
         app:layout_constraintTop_toBottomOf="@id/tv_e"
         app:layout_constraintStart_toEndOf="@id/tv_pai"/>
 
@@ -54,12 +59,14 @@
         android:id="@+id/tv_sqrt"
         style="@style/style4"
         android:text="√"
+        android:tag="√"
         app:layout_constraintTop_toBottomOf="@id/tv_log"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_abs"
         style="@style/style4"
         android:text="abs"
+        android:tag="abs"
         app:layout_constraintTop_toBottomOf="@id/tv_ln"
         app:layout_constraintStart_toEndOf="@id/tv_log"/>
 
@@ -80,12 +87,14 @@
         android:id="@+id/tv_sin"
         style="@style/style4"
         android:text="sin"
+        android:tag="sin"
         app:layout_constraintTop_toBottomOf="@id/tv_sqrt"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_cos"
         style="@style/style4"
         android:text="cos"
+        android:tag="cos"
         app:layout_constraintTop_toBottomOf="@id/tv_abs"
         app:layout_constraintStart_toEndOf="@id/tv_sin"/>
 
@@ -93,6 +102,7 @@
         android:id="@id/tv_tan"
         style="@style/style4"
         android:text="tan"
+        android:tag="tan"
         app:layout_constraintStart_toEndOf="@id/tv_cos"
         app:layout_constraintTop_toBottomOf="@+id/tv_blank2" />
 
@@ -103,12 +113,14 @@
         android:id="@+id/tv_asin"
         style="@style/style4"
         android:text="asin"
+        android:tag="asin"
         app:layout_constraintTop_toBottomOf="@id/tv_sin"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_acos"
         style="@style/style4"
         android:text="acos"
+        android:tag="acos"
         app:layout_constraintTop_toBottomOf="@id/tv_cos"
         app:layout_constraintStart_toEndOf="@id/tv_sin"/>
 
@@ -116,6 +128,7 @@
         android:id="@id/tv_atan"
         style="@style/style4"
         android:text="atan"
+        android:tag="atan"
         app:layout_constraintStart_toEndOf="@id/tv_cos"
         app:layout_constraintTop_toBottomOf="@+id/tv_tan" />
 
@@ -125,12 +138,14 @@
         android:id="@+id/tv_sinh"
         style="@style/style4"
         android:text="sinh"
+        android:tag="sinh"
         app:layout_constraintTop_toBottomOf="@id/tv_asin"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_cosh"
         style="@style/style4"
         android:text="cosh"
+        android:tag="cosh"
         app:layout_constraintTop_toBottomOf="@id/tv_acos"
         app:layout_constraintStart_toEndOf="@id/tv_sinh"/>
 
@@ -138,6 +153,7 @@
         android:id="@id/tv_tanh"
         style="@style/style4"
         android:text="tanh"
+        android:tag="tanh"
         app:layout_constraintStart_toEndOf="@id/tv_cosh"
         app:layout_constraintTop_toBottomOf="@+id/tv_atan" />
 
@@ -147,19 +163,22 @@
         android:id="@+id/tv_asinh"
         style="@style/style4"
         android:text="asinh"
+        android:tag="asinh"
         app:layout_constraintTop_toBottomOf="@id/tv_sinh"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/tv_acosh"
         style="@style/style4"
         android:text="acosh"
+        android:tag="acosh"
         app:layout_constraintTop_toBottomOf="@id/tv_cosh"
         app:layout_constraintStart_toEndOf="@id/tv_sinh"/>
 
     <TextView
-        android:id="@+id/atanh"
+        android:id="@+id/tv_atanh"
         style="@style/style4"
         android:text="atanh"
+        android:tag="atanh"
         app:layout_constraintStart_toEndOf="@id/tv_cosh"
         app:layout_constraintTop_toBottomOf="@+id/tv_tanh" />
 </androidx.constraintlayout.widget.ConstraintLayout>
