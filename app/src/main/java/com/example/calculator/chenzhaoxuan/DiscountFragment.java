@@ -3,6 +3,7 @@ package com.example.calculator.chenzhaoxuan;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import androidx.core.widget.TextViewCompat;
 import androidx.fragment.app.Fragment;
 
 import android.text.TextUtils;
@@ -113,7 +114,6 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
     public String calSaved(double f_add, double f_ori, double f_dis) {
         return String.valueOf(f_ori * f_dis / 100 * (1 + (f_add / 100)));
     }
-
     public String calPrice(double f_add, double f_ori, double f_dis) {
         return String.valueOf(f_ori * (1 - (f_dis / 100)) * (1 + (f_add / 100)));
     }
