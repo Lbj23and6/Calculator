@@ -27,20 +27,23 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/tv_reuslt">
 
-        <TextView
+        <ImageView
             android:text="..."
+            android:src="@drawable/more"
             android:id="@+id/tv_more"
             style="@style/style2" />
 
-        <TextView
+        <ImageView
             android:text="^"
             android:tag="^"
+            android:src="@drawable/power"
             android:id="@+id/tv_capital"
             style="@style/style2" />
 
-        <TextView style="@style/style2"
+        <ImageView style="@style/style2"
             android:id="@+id/tv_percent"
             android:text="%"
+            android:src="@drawable/percent"
             android:tag="%"/>
 
         <ImageView
@@ -50,35 +53,38 @@
             style="@style/style2" />
     </LinearLayout>
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_clear"
         style="@style/style3"
         android:text="C"
+        android:src="@drawable/clear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fun_1" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_left_brackets"
         style="@style/style3"
         android:text="（"
         android:tag="("
+        android:src="@drawable/left_bracket"
         app:layout_constraintStart_toEndOf="@id/tv_clear"
         app:layout_constraintTop_toBottomOf="@id/fun_1" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_right_brackets"
         style="@style/style3"
         android:text="）"
         android:tag=")"
+        android:src="@drawable/right_bracket"
         app:layout_constraintStart_toEndOf="@id/tv_left_brackets"
         app:layout_constraintTop_toBottomOf="@id/fun_1" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_division"
         style="@style/style3"
         android:text="÷"
         android:tag="÷"
-        android:src="@drawable/num_3"
+        android:src="@drawable/divison"
         app:layout_constraintStart_toEndOf="@+id/tv_right_brackets"
         app:layout_constraintTop_toBottomOf="@id/fun_1" />
 
@@ -109,11 +115,12 @@
         app:layout_constraintStart_toEndOf="@id/tv_8"
         app:layout_constraintTop_toBottomOf="@+id/tv_right_brackets" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_multiply"
         style="@style/style3"
         android:text="×"
         android:tag="×"
+        android:src="@drawable/multip"
         app:layout_constraintStart_toEndOf="@id/tv_9"
         app:layout_constraintTop_toBottomOf="@id/tv_division" />
 
@@ -144,11 +151,12 @@
         app:layout_constraintStart_toEndOf="@id/tv_5"
         app:layout_constraintTop_toBottomOf="@id/tv_9" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_sub"
         style="@style/style3"
         android:text="-"
         android:tag="-"
+        android:src="@drawable/sub"
         app:layout_constraintStart_toEndOf="@id/tv_6"
         app:layout_constraintTop_toBottomOf="@id/tv_multiply" />
 
@@ -185,6 +193,7 @@
         style="@style/style3"
         android:text="+"
         android:tag="+"
+        android:src="@drawable/additon"
         app:layout_constraintStart_toEndOf="@id/tv_3"
         app:layout_constraintTop_toBottomOf="@id/tv_sub" />
 
@@ -207,18 +216,20 @@
         app:layout_constraintStart_toEndOf="@id/tv_clear"
         app:layout_constraintTop_toBottomOf="@id/tv_2" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_spot"
         style="@style/style3"
         android:text="."
         android:tag="."
+        android:src="@drawable/spot"
         app:layout_constraintStart_toEndOf="@id/tv_left_brackets"
         app:layout_constraintTop_toBottomOf="@id/tv_3" />
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_equal"
         style="@style/style3"
         android:text="="
+        android:src="@drawable/equal"
         app:layout_constraintStart_toEndOf="@id/tv_spot"
         app:layout_constraintTop_toBottomOf="@id/tv_add" />
 </androidx.constraintlayout.widget.ConstraintLayout>
